@@ -1,0 +1,158 @@
+/* Political Priorities Component Styles */
+.political-priorities {
+    background-color: #4CAF50; /* Green background color */
+    padding: 3rem 1rem;
+    color: white;
+    width: 100%;
+  }
+  
+  .priorities-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Header section */
+  .priorities-header {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .priorities-header h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .priorities-header h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .priorities-header p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 400px;
+  }
+  
+  /* Cards container */
+  .priorities-cards {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  
+  /* Individual priority card */
+  .priority-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    min-width: 180px;
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .priority-card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .card-icon {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-icon svg {
+    width: 35px;
+    height: 35px;
+    color: white;
+  }
+  
+  .priority-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .read-more-btn {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: auto;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .priorities-container {
+      flex-direction: column;
+    }
+    
+    .priorities-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .priorities-header p {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .priorities-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .priority-card {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .priorities-header h2 {
+      font-size: 1.8rem;
+    }
+    
+    .priorities-header p {
+      font-size: 0.9rem;
+    }
+    
+    .priority-card {
+      padding: 1.5rem 1rem;
+    }
+  }

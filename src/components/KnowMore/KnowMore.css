@@ -1,0 +1,81 @@
+/* Section Title */
+.know-more-title {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+  
+  @media (max-width: 576px) {
+    .know-more-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Button */
+  .know-more-btn {
+    background: #132364;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background 0.2s;
+  }
+  .know-more-btn:hover,
+  .know-more-btn:focus {
+    background: #222F64;
+    color: #fff;
+  }
+  
+  /* Leader Image */
+  .know-more-leader-img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 1.5rem;
+  }
+  
+  /* Features Section */
+  .know-more-features-section {
+    background-image: url('../../assets/section_bg1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(34,47,100, 0.9);
+    background-blend-mode: overlay;
+  }
+  
+  /* Feature Card */
+  .know-more-feature-card {
+    background: #fff;
+    border-radius: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 12px rgba(30, 41, 59, 0.08);
+  }
+  .know-more-feature-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(30, 41, 59, 0.16);
+  }
+  
+  /* Feature Number */
+  .feature-number {
+    width: 56px;
+    height: 56px;
+    background: #4ec16e;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(76, 193, 110, 0.15);
+  }
+  
+  /* Feature Title */
+  .know-more-feature-title {
+    font-size: 1.1rem;
+  }
+  
+  /* Responsive tweaks for cards */
+  @media (max-width: 991.98px) {
+    .know-more-feature-card {
+      margin-bottom: 1.5rem;
+    }
+  }

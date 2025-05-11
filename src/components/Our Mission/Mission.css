@@ -1,0 +1,123 @@
+.mission-section {
+    background: #f5f5f5;
+    padding: 48px 0 64px 0;
+  }
+  
+  .mission-header {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  
+  .mission-subtitle {
+    color: #41ad49;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 17px;
+    letter-spacing: 0.04em;
+  }
+  
+  .mission-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.12;
+    color: #222;
+    margin: 0 0 10px 0;
+  }
+  
+  .mission-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1080px;
+  }
+  
+  .mission-card {
+    background: #fff;
+    border-radius: 13px;
+    box-shadow: 0 4px 18px 0 rgba(28,28,28,0.07);
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 38px 28px 32px 28px;
+    transition: box-shadow 0.2s;
+  }
+  
+  .mission-card:hover {
+    box-shadow: 0 8px 30px 0 rgba(28,28,28,0.14);
+  }
+  
+  .mission-icon-wrap {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: #f6f7f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+  
+  .mission-icon {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+  }
+  
+  .mission-card-title {
+    font-size: 1.18rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #222;
+  }
+  
+  .mission-card-desc {
+    color: #757575;
+    font-size: 0.98rem;
+    text-align: center;
+    margin-bottom: 24px;
+    min-height: 48px;
+  }
+  
+  .mission-btn {
+    background: #41ad49;
+    border: none;
+    color: #fff;
+    font-size: 1.02rem;
+    font-weight: 500;
+    padding: 12px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.18s;
+  }
+  
+  .mission-btn:hover {
+    background: #318537;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1050px) {
+    .mission-cards {
+      gap: 18px;
+    }
+    .mission-card {
+      width: 290px;
+      padding: 32px 18px 28px 18px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .mission-cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    .mission-card {
+      width: 85vw;
+      max-width: 340px;
+    }
+  }
+  
